@@ -73,7 +73,7 @@
 			this.picker.find('.prev i, .next i')
 						.toggleClass('icon-arrow-left icon-arrow-right');
 		}
-		$(document).on('mousedown', function (e) {
+		$(document.body).on('mousedown', function (e) {
 			// Clicked outside the datepicker, hide it
 			if ($(e.target).closest('.datepicker.datepicker-inline, .datepicker.datepicker-dropdown').length === 0) {
 				that.hide();
